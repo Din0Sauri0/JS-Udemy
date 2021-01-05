@@ -1,0 +1,13 @@
+body{
+    background-color: #eee;
+}
+.grid{
+    display: grid; 
+    /*grid-template-rows: 50px 100px; /*Con esto le doy la altura a las columnas, si ahi mas de dos elementos los demas tomaran una altura automaticamente, siemprte y cuanod yo no la indique*/
+    grid-template-rows: minmax(100px, auto);
+    /*grid-template-columns: 90px 50px 120px; /*Con esto se le da el tamaño a la columna, si no le asigna el tamaño a todos los elementos se tomara el del primero, ejemplo si tengo 6 elementos ty defino solo 3 tamaños, los otros 3 restantes tomaran el tamaño de los primeros 3*/
+    grid-template-columns: minmax(auto, 50%) 1fr 3em;
+}
+.element{
+    background-color: red;
+}

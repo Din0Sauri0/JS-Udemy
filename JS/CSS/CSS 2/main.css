@@ -1,0 +1,10 @@
+body{
+    background-color: #efefef;
+}
+
+#parrafo{ 
+    color: #ff0000;  /*tipo de seleccion por id*/
+}
+.etiqueta{      /*tipo de seleccion por clase*/
+    color: #00aa00;
+}

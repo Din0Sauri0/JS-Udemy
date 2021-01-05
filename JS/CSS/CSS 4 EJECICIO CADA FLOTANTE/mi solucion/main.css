@@ -1,0 +1,32 @@
+body{
+    background-color: #eee;
+}
+
+.container{
+
+    background-color: #fff;
+}
+.cabecera{
+    padding: 8px;
+    border-bottom:solid 1px #eee;
+}
+.contenido{
+    padding: 8px;
+    border-bottom: solid 1px #eee;
+}
+.botones{
+    padding: 8px;
+}
+
+#aceptar{
+    color: #fff;
+    background-color: #0090FF;
+    border: 0px;
+    padding: 6px;
+}
+#cancelar{
+    color: #fff;
+    background-color: #aaa;
+    border-style: none;
+    padding: 6px;
+}

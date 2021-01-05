@@ -1,0 +1,10 @@
+body{
+    background-color: #eee;
+    width: 200px;
+}
+
+.flex{
+    display: flex;
+    flex-flow: row nowrap; /*Con este flex-flow puedo asignar los valores que tomarian flex-direction y flex-wrap*/
+    justify-content: ;
+}

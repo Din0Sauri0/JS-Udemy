@@ -1,0 +1,28 @@
+body{
+    background-color: #eee;
+}
+.grid{
+    display: grid; 
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: repeat(, 1fr);
+    /*grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    Esto le da la separacin entre objetos, y estos dos metodos equivales solo al metodo de abajo, en donde el primer valor es para las filas y el otro para las columnas
+    */
+    grid-gap: 20px 10px;
+}
+.element{
+    background-color: red;
+}
+
+.header{
+    /*
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    Esto me permite que un elemento tome el ancho total de una fila o de una columna, la forma abreviada de todo esto seria la de abajo
+    */
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}

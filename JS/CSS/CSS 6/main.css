@@ -1,0 +1,28 @@
+body{
+    background-color: #eee;
+}
+a{
+    color: hotpink;
+    background-color: #f00;
+    border: solid 1px #d00;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+/*Casos especificos*/
+a:link{ /*Estilo cuando no ha sido visitado aun el link*/
+    color: pink;
+    text-decoration: none;
+}
+a:visited{ /*Estilo cuando el siito ya fue visitado*/
+    color: white;
+}
+a:hover{ /*Estilo al pasar puntero por encima*/
+    color: white;
+    background-color: #f55;
+}
+a:active{ /*Estilo al mantener presionado*/
+    color: red;
+}
+
+

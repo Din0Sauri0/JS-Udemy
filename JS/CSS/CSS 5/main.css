@@ -1,0 +1,23 @@
+body{
+    background-color: #eee;
+}
+
+p{
+    font-family: "Time New Roman";
+    font-weight: 500; /*Cambia el ancho de la letra*/
+    font-style: oblique;
+    font-size: 1.5em;
+    color: #222fff;
+    text-align: justify;
+    text-indent: 40px; /*Identa la primera fila*/
+    line-height: 1.7; /*Aumenta la separacion entre linea*/
+    word-spacing: 10px; /*Da un espaciado entre palabras*/
+    text-shadow: 1px 2px 2px rgba(0,0,0, 0.3); /*Le da una sombra a las letras*/
+
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 3px; /*Da un espaciado entre letras*/
+}

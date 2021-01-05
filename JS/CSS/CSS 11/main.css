@@ -1,0 +1,15 @@
+body{
+    background-color: #eee;
+}
+
+img{
+    float: right;
+    opacity: 1; /*Resive un valor entre 0 y 1, donde 0 es totalmente invisible y 1 es totalmente solida*/
+}
+img:hover{
+    opacity: 0.8;
+}
+
+div p {
+    color: #f00;
+}

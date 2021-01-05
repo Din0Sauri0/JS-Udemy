@@ -1,0 +1,25 @@
+body{
+    background-color:#eee;
+}
+table{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;/*Le quita los border de la tabla*/
+}
+tr:nth-child(even){ /*Para seleccion intercalado en la tabla*/
+    background-color: #f2f2f2;
+    
+}
+td{
+    border: solid 1px #ddd;
+    padding: 8px;
+}
+table th {
+    background-color: #4caf50;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
