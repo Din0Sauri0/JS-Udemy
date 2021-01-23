@@ -1,8 +1,7 @@
 //Instruccion para imprimir por consola.
 console.log('--------------------')
 console.log('Hola Mundo')
-console.log('--------------------')
-
+console.log('--------------------') 
 //Tipos de datos
 // String: cadenas de caracteres, esto puede ser una palabra o solo una letra y se escribe entre ''. Ejemplo: 'Hola mundo' o tambien "Hola mundo"
 //Bolean: Toma valores que son true o false (verdadero o falso)
@@ -86,7 +85,7 @@ console.log('--------------------')
 
 //Operaciones matematicas
 // Suma
-const suma = 1 + 2
+//const suma = 1 + 2
 //Resta
 const resta = 1 - 2
 //Multiplicacion
@@ -117,3 +116,142 @@ console.log('--------------------')
 //or: ||
 //and: &&
 //not: !
+//
+//Control de flujo
+// if...else
+const edad = 12
+if(edad > 5 && edad < 18){
+  console.log("El chico puede jugar" )
+}else{
+  console.log('El chico no puede jugar')
+}
+
+//while
+
+//se repite hasta que tome el valor de false
+let x = 0
+ while(x<=5){
+   console.log('x: ',x)
+   x++
+ }
+console.log('se ha terminado el cilo while')
+
+//switch
+switch (/*condicion*/ true){
+  case 1:{
+    console.log('yo soy el caso uno')
+    break;
+  }
+  case 2:{
+    console.log('yo soy el caso numero dos')
+    break;
+  }
+  case 3:{
+    console.log("Yo soy el caso numero tres")
+    break;
+  }
+  default:
+    console.log("Yo soy el caso por defecto")
+    break;
+}
+
+//FOR
+//valor inical, condicion y incremento o decremento
+for (let i = 0;i < 10; i++){
+  console.log(i) 
+}
+
+
+//Accediendo a los elementos de un arreglo con for
+//
+const numero  = [1,2,3,4,5]
+let largoLista = numero.length
+for (let i = 0;i<largoLista; i++){
+  console.log(numero[i])
+}
+console.log('------------------------')
+//Funciones
+//
+function iterar(arg1) {
+  const numero = [1,2,3,4,5]
+  for(let i = 0 ; i< arg1.length;i++){
+    console.log(arg1[i])
+  }
+}
+const nombres = ['pedro', 'javier']
+
+iterar(nombres)
+iterar(numero)
+
+function suma(a, b){
+  return a+b;
+  //Todas la funciones deben llevar un return o si no el resultaado de esta sera indefinido
+}
+
+suma(1,2)
+
+const resultadoSuma1 = suma(1,2)
+const resultadoSuma2 = suma(2,2)
+const resultadoSuma3 = suma(resultadoSuma1, resultadoSuma2)
+console.log('resultado', resultadoSuma3)
+
+//Callback
+function sumar(a,b,cb){
+  const r = a+b
+  cb(r)
+}
+function callback(result){
+  console.log('resultado', result)
+}
+
+sumar(2,3,callback)
+
+//Fat arrow function
+const myFatArrowFunction = (a,b) => a + b //sin return
+const rr = myFatArrowFunction(1,2)
+const otraFAF = (a,b) => { //Con return
+  return a+b
+}
+const otraFAFResult = otraFAF(1,3)
+console.log(otraFAFResult)
+
+//funciones anonimas
+sumar(2,3, function(r){
+  console.log('soy una funcion anonima y mi resultado es: ',r) 
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
